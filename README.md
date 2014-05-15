@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ZendSkeletonApplication
 =======================
 
@@ -75,3 +76,9 @@ project and you should be ready to go! It should look something like below:
             Allow from all
         </Directory>
     </VirtualHost>
+=======
+wadifa
+======
+
+Site E-Recrutement PFA
+>>>>>>> 5f1172f0301b7deff655c115a7478f6020462c86
