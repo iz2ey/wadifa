@@ -11,7 +11,7 @@ use Zend\Stdlib\Hydrator;
 use ZfcBase\EventManager\EventProvider;
 use ZfcUser\Mapper\UserInterface as UserMapperInterface;
 use ZfcUser\Options\UserServiceOptionsInterface;
-
+use Application\Entity;
 class User extends EventProvider implements ServiceManagerAwareInterface
 {
 

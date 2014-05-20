@@ -5,9 +5,10 @@ return array(
         'Application',
 		 'DoctrineModule',
         'DoctrineORMModule',
-        'ZfcBase',
-        'ZfcUser',
-        'ZfcUserDoctrineORM',
+        //'ZfcBase',
+        //'ZfcUser',
+        //'ZfcUserDoctrineORM',
+        'CsnUser',
     ),
 
     // These are various options for the listeners attached to the ModuleManager
