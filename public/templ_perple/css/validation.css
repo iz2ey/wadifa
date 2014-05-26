@@ -1,0 +1,46 @@
+/* Signup form */
+
+form .status {
+  padding-top: 2px ;
+  padding-left: 8px;
+  vertical-align: top;
+  width: 246px;
+  white-space: nowrap;
+}
+
+
+form label.error {
+	
+	
+  background:url("../img/error.jpg") no-repeat 0px 0px;
+  padding-left: 20px !important;
+  padding-bottom: 2px !important;
+  padding-top: 2px !important;
+  font-weight: bold !important;
+  color: #EA5200 !important;
+  width:260px !important;
+  text-align: left !important;
+  border: none !important;
+  
+  margin:0px 0px 0px 0px !important;
+  
+  
+}
+
+form label.checked {
+  background:url("../img/accept.jpg") no-repeat 0px 0px;
+  width:100px !important;
+  border: none !important;
+  float: right !important;
+margin-bottom:-30px !important;
+margin-top:-17px !important;
+ margin-right:-100px !important; 
+  
+}
+
+form .success_msg {
+  font-weight: bold;
+  color: #0060BF;
+  margin-left: 19px;
+  margin-top: 2px !important;
+}

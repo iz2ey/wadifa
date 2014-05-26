@@ -1,0 +1,52 @@
+.bloc-lot .bloc-input2 p select{
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #CCCCCC;
+    color: #9DB22B;
+    float: left;
+    font-family: arial;
+    font-size: 11px;
+    height: 30px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+ /*modif 255px*/   width: 149px;
+}
+/*Ajouté par l'equipe des développeurs*/
+.bloc-input2 {
+    width : 680px;
+    }
+td input[type="text"],p input {
+  background-color: transparent;
+  border: 1px solid #999999;
+  color: #1E83BD !important;
+  font-family: tahoma,arial,verdana;
+  font-size: 12px;
+  height: 17px;
+  margin-bottom: 7px;
+  padding: 0 2px 2px 3px;
+}
+td TEXTAREA{
+  background-color: transparent;
+  border: 1px solid #999999;
+  color: #1E83BD !important;
+  font-family: tahoma,arial,verdana;
+  font-size: 12px;
+  margin-bottom: 7px;
+  /*padding: 0 2px 2px 3px;*/
+}
+.bloc2-input-gerer-offre td input,.bloc-input2 td input{
+float: left;
+font-size: 11px;
+color: 
+#9DB22B;
+font-family: arial;
+background: 
+whiteSmoke;
+border: 1px solid 
+#CCC;
+padding-left: 4px;
+margin: 0px;
+}
+.bloc2-input-gerer-offre td input,.bloc-input2 td input[type="radio"]{
+margin: 0 2px 0 20px;	
+}

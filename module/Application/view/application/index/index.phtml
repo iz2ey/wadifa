@@ -1,44 +1,599 @@
-<div class="jumbotron">
-    <h1><?php echo sprintf($this->translate('Welcome to %sZend Framework 2%s'), '<span class="zf-green">', '</span>') ?></h1>
-    <p><?php echo sprintf($this->translate('Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2.'), '<a href="https://github.com/zendframework/ZendSkeletonApplication" target="_blank">', '</a>', \Zend\Version\Version::VERSION) ?></p>
-    <p><a class="btn btn-success btn-lg" href="https://github.com/zendframework/zf2" target="_blank"><?php echo $this->translate('Fork Zend Framework 2 on GitHub') ?> &raquo;</a></p>
+	<!--  COL LEFT   -->
+<div id="left_content" class="grid_9">
+<div class="trouver_emploi">
+<div class="h1_title">
+<div class="d_h1"></div>
+<h1 class="c_h1">Trouver un emploi</h1>
+<div class="f_h1"></div>
+</div>
+<div class="grid_5"> <form id="ChercheurResultatRechercheForm" method="get" action="http://www.anapec.org/sigec-app-rv/chercheurs/resultat_recherche"><div class="input_div"><label for="ChercheurMotCle">Mot clé:</label><div class="input text"><input name="motclee" type="text" value="" id="ChercheurMotclee" /></div><input type="hidden" name="appcle" value="toutlesmot" id="ChercheurAppcle" /></div>
+<div class="input_div omega"><label for="ChercheurSecteurActivite">Secteur d'activité:</label><div class="input select"><select name="gender" id="gender">
+<option value="">Tout</option>
+<option value="151">Activités associatives</option>
+<option value="170">Activités extra-territoriales</option>
+<option value="110">Activités immobilières </option>
+<option value="152">Activités récréatives, culturelles et sportives</option>
+<option value="120">Administration publique</option>
+<option value="10">Agriculture, chasse</option>
+<option value="150">Assainissement, voirie et gestion des déchets </option>
+<option value="101">Assurance</option>
+<option value="0">Autres</option>
+<option value="33">Autres industries extractives</option>
+<option value="102">Auxiliaires financiers et d&#039;assurance </option>
+<option value="51">Captage, traitement et distribution d&#039;eau</option>
+<option value="48">Cokéfaction, raffinage, industries nucléaires</option>
+<option value="72">Commerce de détail et réparation d&#039;articles domestiques</option>
+<option value="71">Commerce de gros et intermédiaires du commerce</option>
+<option value="70">Commerce et réparation automobile</option>
+<option value="112">Conseil en systèmes informatiques </option>
+<option value="60">Construction</option>
+<option value="47">Edition, imprimerie, reproduction</option>
+<option value="130">Education</option>
+<option value="31">Extraction d&#039;hydrocarbures </option>
+<option value="30">Extraction de houille, de lignite et de tourbe</option>
+<option value="32">Extraction, exploitation et enrichissement de minerais métalliques</option>
+<option value="410">Fabrication d&#039;autres matériels de transport</option>
+<option value="401">Fabrication d&#039;autres produits minéraux non métalliques</option>
+<option value="408">Fabrication d&#039;instruments médicaux, de précision d&#039;optique et d&#039;horlogerie</option>
+<option value="407">Fabrication d&#039;équipements de Radio, Télévision et Communication</option>
+<option value="405">Fabrication de machines de bureau et de matériel informatique</option>
+<option value="406">Fabrication de machines et appareils électriques</option>
+<option value="404">Fabrication de machines et équipements</option>
+<option value="411">Fabrication de meubles, industries diverses</option>
+<option value="80">Hôtellerie et restauration</option>
+<option value="409">Industrie automobile</option>
+<option value="49">Industrie chimique</option>
+<option value="43">Industrie de l&#039;habillement et des fourrures</option>
+<option value="41">Industrie du Tabac</option>
+<option value="400">Industrie du caoutchouc et des plastiques</option>
+<option value="44">Industrie du cuir et de la chaussure</option>
+<option value="46">Industrie du papier et du carton</option>
+<option value="42">Industrie textile</option>
+<option value="40">Industries alimentaires</option>
+<option value="100">Intermédiation financière</option>
+<option value="111">Location sans opérateur</option>
+<option value="402">Métallurgie</option>
+<option value="94">Postes et télécommunications</option>
+<option value="50">Production et distribution d&#039;électricité, de gaz et de chaleur </option>
+<option value="20">Pêche, aquaculture</option>
+<option value="113">Recherche et développement</option>
+<option value="412">Récupération</option>
+<option value="140">Santé et action sociale</option>
+<option value="93">Services auxiliaires des transports </option>
+<option value="160">Services domestiques</option>
+<option value="114">Services fournis principalement aux entreprises</option>
+<option value="153">Services personnels</option>
+<option value="11">Sylviculture, exploitation forestière </option>
+<option value="92">Transports aériens</option>
+<option value="91">Transports par eau </option>
+<option value="90">Transports terrestres</option>
+<option value="403">Travail des métaux</option>
+<option value="45">Travail du bois et fabrication d&#039;articles en bois </option>
+</select></div></div>
+<div class="input_div"><label for="ChercheurEntreprise">Entreprise:</label><div class="input text"><input name="entreprise" type="text" size="40" id="testinput" value="" /></div></div>
+<div class="input_div omega"><label for="ChercheurVille">Ville:</label><div class="input select"><select name="ville" id="ville">
+<option value="">Tout</option>
+<option value="1">AGADIR</option>
+<option value="41">AL HAOUZ    </option>
+<option value="51">AL HOCEIMA  </option>
+<option value="61">AL ISMAILIA </option>
+<option value="66">AOUSSERED</option>
+<option value="71">ASSA ZAG    </option>
+<option value="81">AZILAL      </option>
+<option value="111">BEN SLIMANE </option>
+<option value="91">BENI MELLAL </option>
+<option value="113">BERKANE</option>
+<option value="601">BERRECHID</option>
+<option value="121">BOUJDOUR    </option>
+<option value="131">BOULEMANE   </option>
+<option value="11">CASA-AIN CHOCK HAY HASSANI </option>
+<option value="21">CASA-AIN SEBAA HAY MOHAMEDI</option>
+<option value="31">CASA-AL FIDA DERB SULTAN      </option>
+<option value="1000">CASA-ANFA SUPERIEUR</option>
+<option value="622">CASA-BEN MSIK-SIDI OTHMANE</option>
+<option value="376">CASA-MOULAY RACHID</option>
+<option value="423">CASA-SIDI BERNOUSSI</option>
+<option value="141">CASABLANCA-ANFA</option>
+<option value="151">CHEFCHAOUEN </option>
+<option value="161">CHICHAOUA   </option>
+<option value="163">CHTOUKA AIT BAHA</option>
+<option value="171">EL HAJEB    </option>
+<option value="181">EL JADIDA   </option>
+<option value="191">EL KELAA DES SRAGHNA     </option>
+<option value="201">ERRACHIDIA  </option>
+<option value="221">ES-SEMARA   </option>
+<option value="211">ESSAOUIRA   </option>
+<option value="231">FES EL JADID DAR DBIBAGH </option>
+<option value="241">FES MEDINA  </option>
+<option value="251">FIGUIG      </option>
+<option value="261">GUELMIM     </option>
+<option value="271">IFRANE      </option>
+<option value="273">INEZGANE AIT MELLOUL </option>
+<option value="999">INTERNATIONAL</option>
+<option value="275">JERADA      </option>
+<option value="281">KENITRA     </option>
+<option value="291">KHEMISSET   </option>
+<option value="301">KHENIFRA    </option>
+<option value="311">KHOURIBGA   </option>
+<option value="321">LAAYOUNE    </option>
+<option value="331">LARACHE     </option>
+<option value="333">MACHOUAR DECASABLANCA  </option>
+<option value="351">MARRAKACH - MENARA</option>
+<option value="341">MARRAKECH GUELIZ-ENNAKHIL</option>
+<option value="950">MDIQ</option>
+<option value="101">MEDIOUNA</option>
+<option value="361">MEKNES-EL MENZEH</option>
+<option value="371">MOHAMMEDIA  </option>
+<option value="381">NADOR       </option>
+<option value="391">OUAD EDDAHAB</option>
+<option value="401">OUARZAZATE </option>
+<option value="705">OUEZZANE</option>
+<option value="411">OUJDA ANGAD</option>
+<option value="1003">PLUSIEURS VILLES</option>
+<option value="421">RABAT AGDAL</option>
+<option value="1002">RABAT CENTRE</option>
+<option value="422">RABAT HASSAN</option>
+<option value="524">RABAT IRFANE</option>
+<option value="980">RHAMNA</option>
+<option value="431">SAFI        </option>
+<option value="441">SALE        </option>
+<option value="451">SEFROU      </option>
+<option value="461">SETTAT      </option>
+<option value="471">SIDI BERNOUSSI-ZENATTA</option>
+<option value="604">SIDI IFNI</option>
+<option value="481">SIDI KACEM  </option>
+<option value="1001">SIDI SLIMANE</option>
+<option value="491">SIDI YOUSSEF BEN ALI</option>
+<option value="501">SKHIRATE TEMARA      </option>
+<option value="436">SLE-AL JADIDA</option>
+<option value="521">TAN-TAN     </option>
+<option value="511">TANGER-ASSILAH</option>
+<option value="227">TANGER-FAHS-ANJRA</option>
+<option value="531">TAOUNATE    </option>
+<option value="533">TAOURIRT</option>
+<option value="541">TAROUDANT  </option>
+<option value="551">TATA        </option>
+<option value="561">TAZA        </option>
+<option value="571">TETOUAN     </option>
+<option value="700">TINGHIR</option>
+<option value="581">TIZNIT      </option>
+<option value="587">ZAGORA</option>
+<option value="591">ZOUAGHA  MOULAY YACOUB</option>
+</select></div></div>
+<div class="fix-width pull-left margintop5 marginbottom5"><!--  <span class="pull-left"><a href="#" class="pull-right margintop5">&gt;&gt; Recherche avancée</a></span> -->
+<input type="submit" value="OK" class="okgreen pull-right" />
+</div>
+</form><div class="clear"></div>
+<div class="postuler_home"><span class="title_postuler bold">Postuler
+sur une offre</span> <form id="FormPostule" class="nyroModal" method="get" action="http://www.anapec.org/sigec-app-rv/chercheurs/postulation"><input name="ref" type="text" id="ref" value="" /><input type="hidden" name="deconnexion" value="signout" id="ChercheurDeconnexion" /><input type="submit" value="Postuler" id="submit_ref" class="pull-right postuler_link" style="border:none; padding:0px;" disabled="disabled" /></form></div>
+</div>
+<div class="grid_4 alpha omega">
+<div class="info_bull_grise">Cliquez sur<br />
+une région</div>
+<!--  -->
+<div class="zedx_map admin" id="zedx_map"
+	style="display: block; position: relative; padding: 0px; width: 370px; height: 372px;" />
+<canvas width="370" height="372"
+	style="width: 370px; height: 372px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px none; opacity: 1;"></canvas>
+<img src="<?php echo $this->basePath(); ?>img/img_new/map.png" alt="Anapec" border="0"
+	usemap="#imagemap" class="zedx_map maphilighted"
+	style="opacity: 0; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px none;" />
+</div>
+<map name="imagemap">
+	<area shape="poly"
+		coords="220,13,222,13,222,13,223,13,224,13,224,13,225,14,226,14,227,14,227,14,228,13,229,13,229,13,230,12,230,12,231,12,231,11,231,11,232,11,232,11,232,12,233,13,234,13,234,14,235,14,236,14,237,15,238,15,238,15,239,15,242,15,243,15,243,15,244,16,245,16,245,17,246,18,246,18,247,19,247,19,247,20,248,21,248,21,248,22,249,22,249,23,249,23,250,24,250,24,250,25,250,26,251,26,251,27,251,27,251,28,251,29,251,29,252,30,252,30,252,31,252,31,252,34,252,34,252,36,252,37,252,38,252,38,252,39,252,39,252,42,252,42,252,43,252,44,252,44,253,46,253,47,253,47,253,48,254,48,254,49,254,49,254,50,254,50,254,51,254,52,255,52,255,53,255,53,255,54,256,54,256,55,256,55,256,55,257,56,258,56,258,57,259,58,259,58,259,59,260,60,261,60,262,61,262,61,263,61,263,62,262,63,261,64,261,64,261,64,261,65,261,65,260,66,261,66,261,67,261,67,262,68,262,68,262,69,262,70,262,70,261,70,260,70,259,70,258,70,258,70,256,69,255,69,254,68,251,68,250,68,248,68,246,68,245,68,244,68,243,68,242,68,242,68,239,69,239,69,237,69,236,69,235,70,234,70,234,71,234,71,234,72,234,73,234,74,233,75,232,76,232,76,231,77,230,77,230,77,230,76,230,75,229,74,229,74,229,72,229,72,229,71,229,71,229,70,229,69,229,69,228,68,227,68,226,68,225,68,224,68,224,68,222,68,221,68,221,68,220,67,220,66,220,65,220,64,219,64,219,63,218,63,218,62,218,61,218,61,218,60,218,59,218,59,219,59,219,58,219,58,219,58,220,57,220,56,220,56,220,56,221,55,221,55,221,55,222,55,222,54,223,54,223,54,223,53,224,53,224,53,225,53,226,53,228,53,228,53,229,53,230,53,230,52,230,52,231,52,231,52,232,51,232,50,233,50,233,50,233,49,233,48,233,48,233,47,233,47,232,47,232,46,231,45,231,45,230,45,230,44,230,44,230,43,230,42,230,42,230,41,231,41,230,41,231,40,231,39,231,39,231,39,231,39,231,38,231,38,230,38,230,37,230,37,230,37,230,36,230,36,230,35,230,35,230,34,231,34,231,34,231,34,231,33,231,32,231,32,230,31,230,31,230,30,230,30,230,30,230,29,230,29,230,28,230,28,230,27,230,27,231,27,231,26,231,26,231,26,231,25,232,25,232,25,232,24,232,24,232,24,232,23,232,23,232,22,232,22,231,22,231,21,230,21,228,21,228,21,227,21,227,21,226,22,226,22,226,22,225,22,224,23,224,23,224,23,223,23,223,23,223,23,222,22,222,22,222,22,222,21,222,21,222,20,222,20,221,19,221,19,221,19,220,18,220,18,220,17,220,17,219,17,219,17,219,16,219,16,218,15,218,15,218,14,218,14,219,13,219,13,219,12,220,12,220,12,220,12,220,13"
+		href="chercheurs/resultat_recherche/region_16.html"
+		title="L'Oriental" alt="L'Oriental" />
+	<area shape="poly"
+		coords="180,61,182,61,183,61,184,61,184,61,185,61,185,61,185,60,185,60,186,60,186,61,188,61,188,62,189,62,189,63,190,63,190,63,191,64,192,64,193,65,193,65,193,66,193,67,193,67,192,67,192,68,191,68,190,69,190,69,190,69,189,70,189,70,189,71,189,71,189,71,189,72,189,73,189,73,189,73,189,73,188,74,188,74,188,74,187,75,187,75,186,75,185,76,185,76,184,77,184,77,184,77,183,78,182,78,181,79,181,79,180,79,180,80,179,80,179,80,178,81,177,81,177,81,176,82,176,82,175,82,174,82,173,83,172,83,171,83,170,83,169,83,169,83,169,83,168,82,168,82,168,81,168,81,168,80,168,80,167,80,167,79,168,79,169,78,169,78,169,78,170,78,170,78,170,77,170,77,170,76,171,76,171,75,171,75,170,74,170,74,170,73,170,73,170,72,170,71,170,71,169,71,169,70,169,70,169,70,169,67,169,67,169,65,169,65,170,64,170,64,172,63,172,62,174,61,175,61,177,61,178,61,179,61,180,61,180,61"
+		href="chercheurs/resultat_recherche/region_3.html"
+		title="Tadla Azilal" alt="Tadla Azilal" />
+	<area shape="poly"
+		coords="194,34,194,34,195,34,195,34,195,35,195,35,196,35,196,36,196,36,196,36,196,37,196,37,197,37,197,38,197,38,197,39,197,39,197,40,198,40,198,41,198,41,198,41,198,42,198,42,198,42,198,42,199,43,199,43,199,43,199,44,200,46,200,47,200,48,200,49,201,50,201,50,201,50,201,51,202,51,202,52,202,52,203,53,203,53,203,54,204,55,204,55,204,55,205,56,206,56,206,57,207,57,207,57,208,58,209,58,209,58,210,59,210,59,211,60,211,60,211,61,212,61,213,62,214,62,215,62,215,62,216,63,216,63,217,63,217,64,218,64,218,65,219,66,219,66,219,67,219,67,219,68,220,68,220,69,220,69,221,69,221,70,222,70,224,70,226,70,226,70,227,70,228,71,227,72,228,73,228,73,228,74,228,74,228,75,228,76,228,77,227,77,227,78,225,78,224,78,224,78,223,78,223,77,222,78,221,78,221,78,221,79,220,79,220,80,221,83,221,84,221,84,221,85,221,86,221,86,221,87,221,87,221,88,221,88,222,89,223,90,223,91,221,93,220,94,219,94,218,94,216,95,215,95,215,95,214,96,213,96,213,96,212,96,209,98,207,99,206,100,205,100,204,101,202,102,202,103,201,103,201,103,201,104,200,103,200,102,200,102,200,101,200,100,199,99,199,99,199,98,199,97,199,97,199,96,198,94,198,93,198,92,198,92,198,92,198,91,198,90,198,89,198,89,198,88,199,87,199,86,200,86,200,85,200,85,200,84,200,83,201,83,200,82,199,82,198,82,198,81,197,81,196,81,196,80,195,80,195,79,194,79,193,79,193,79,192,79,192,78,192,77,192,77,193,76,193,76,193,75,194,75,194,74,193,73,192,72,191,72,191,71,191,71,192,69,193,69,193,69,194,68,195,66,195,65,195,65,194,64,193,63,192,62,192,62,191,61,190,60,189,60,189,60,188,60,187,59,187,58,185,57,184,55,184,54,183,53,182,52,180,50,180,50,181,49,181,48,182,48,182,49,183,49,183,49,183,50,184,50,184,50,185,50,186,50,186,49,186,49,187,49,187,49,188,49,188,49,188,48,189,47,189,47,189,46,189,46,190,45,190,44,190,43,190,43,190,42,190,41,190,40,190,40,190,39,190,39,190,38,190,38,189,37,189,37,189,36,189,36,189,36,189,35,189,35,190,35,190,34,191,34,192,34,192,34,193,34,193,34,194,34"
+		href="chercheurs/resultat_recherche/region_13.html"
+		title="Meknes Tafilalet" alt="Meknes Tafilalet" />
+	<area shape="poly"
+		coords="196,31,198,31,199,31,199,31,200,31,200,31,200,32,201,32,202,32,202,33,203,33,203,33,204,34,204,34,204,34,205,35,205,35,206,36,206,36,207,36,207,37,207,37,208,38,208,38,208,38,209,39,209,39,209,40,210,40,210,40,210,41,211,41,211,42,211,42,212,42,212,42,212,43,213,43,214,44,214,44,214,44,215,45,216,45,217,45,218,45,218,45,218,44,219,44,220,42,221,41,222,40,222,40,223,40,223,39,224,38,224,38,224,38,225,38,225,39,225,39,226,39,226,39,226,40,227,40,227,40,228,41,228,41,229,41,229,42,229,42,229,42,228,43,228,43,228,43,228,44,228,44,228,44,228,45,229,45,229,45,229,46,229,46,229,46,229,46,230,46,230,47,231,47,232,48,232,48,232,48,232,49,232,49,231,50,231,50,230,51,230,51,229,51,229,51,229,51,228,51,227,51,226,51,226,51,225,51,225,51,225,51,224,51,223,51,223,51,223,51,223,51,222,52,222,52,222,52,221,52,221,52,221,53,221,53,220,54,220,54,220,54,219,54,219,54,219,55,219,55,219,55,219,55,219,55,218,56,218,56,218,56,218,57,218,57,218,57,217,58,217,58,217,58,217,59,217,59,217,59,216,60,216,60,216,60,216,61,215,61,215,61,215,61,214,61,214,60,213,59,213,59,212,58,212,58,211,58,211,57,211,57,210,57,210,57,210,56,209,56,209,56,209,56,209,56,208,56,208,56,207,55,207,55,207,55,207,55,206,55,206,55,206,54,205,54,205,54,205,53,205,53,205,52,204,52,204,52,204,52,204,51,204,51,203,51,203,49,203,49,203,49,203,48,202,48,202,47,202,47,202,47,202,46,202,46,202,45,201,45,201,45,201,44,201,44,201,44,201,43,201,43,201,43,200,42,200,42,200,41,200,41,200,41,199,40,199,39,199,38,199,38,199,38,199,37,198,37,198,36,198,36,198,35,197,35,197,34,197,34,196,34,196,33,196,33,196,32,196,32,196,32,196,31,196,31"
+		href="chercheurs/resultat_recherche/region_14.html"
+		title="Fés Boulemane" alt="Fés Boulemane" />
+	<area shape="poly"
+		coords="194,29,196,28,196,27,197,26,198,25,198,25,199,24,199,23,199,23,199,22,199,22,201,22,201,22,202,21,203,21,203,21,204,20,205,20,205,20,206,19,207,18,208,18,208,17,208,17,209,16,209,16,210,15,210,15,211,15,211,15,212,14,213,14,213,13,214,13,216,14,217,14,217,14,218,16,218,17,219,18,219,19,219,19,220,20,220,20,220,21,221,21,221,22,221,22,221,23,221,24,221,24,222,24,223,24,224,24,225,24,226,23,226,23,227,22,228,22,228,22,229,22,229,22,230,22,230,22,230,23,231,23,231,23,231,24,231,24,230,25,230,25,230,25,229,25,229,26,229,26,228,27,228,27,228,27,228,28,228,29,228,29,228,29,229,30,229,30,229,30,229,33,229,34,229,35,229,35,229,36,229,37,229,38,229,40,229,40,228,39,227,39,226,38,226,37,225,37,225,36,224,36,224,36,223,36,223,37,223,38,222,38,222,39,221,39,221,39,220,40,220,40,219,40,219,41,219,42,218,42,218,42,216,43,216,43,215,43,215,43,213,42,212,42,212,41,212,40,212,39,211,39,210,38,210,37,209,36,208,36,208,35,207,35,207,35,206,34,206,33,205,33,204,32,204,32,203,31,203,31,202,31,201,30,201,30,200,30,199,30,199,29,197,29,197,29,196,29,196,29,195,30,194,29"
+		href="chercheurs/resultat_recherche/region_15.html"
+		title="Taza Al Hoceima Taounate" alt="Taza Al Hoceima Taounate" />
+	<area shape="poly"
+		coords="194,0,193,1,192,2,190,2,190,2,189,3,189,3,188,4,188,5,188,6,187,7,186,8,186,8,185,9,185,10,184,11,184,12,183,13,183,14,182,15,182,15,183,16,184,16,184,16,185,17,186,17,187,17,188,18,189,18,190,19,191,20,192,20,193,21,194,21,195,21,196,22,197,22,197,22,198,22,199,21,199,21,200,20,201,20,202,20,202,19,203,19,204,19,204,18,205,18,205,17,206,17,207,17,207,16,207,16,207,15,207,14,205,14,203,13,202,12,201,11,201,11,200,10,199,9,199,9,198,8,198,7,199,6,198,6,197,6,197,5,196,5,196,5,195,4,195,3,195,2,195,1,195,1,195,1,194,0"
+		href="chercheurs/resultat_recherche/region_7.html"
+		title="Tanger Tétouan" alt="Tanger Tétouan" />
+	<area shape="poly"
+		coords="175,32,175,31,176,30,176,29,177,28,178,26,179,25,179,24,179,23,180,23,180,22,180,21,181,20,181,20,182,19,182,18,182,18,182,17,183,17,183,17,185,17,185,18,186,18,187,19,187,19,188,19,189,20,190,20,190,20,191,21,191,21,192,21,193,21,193,22,194,22,194,22,195,22,196,23,197,23,197,23,197,24,196,25,196,26,195,27,194,27,194,28,193,29,193,29,193,30,193,31,193,32,193,32,192,33,190,33,189,33,188,33,187,34,186,34,186,34,185,33,185,32,184,32,182,33,181,33,179,33,179,33,178,33,177,33,176,33,176,32,175,32"
+		href="chercheurs/resultat_recherche/region_6.html"
+		title="Gharb Chrarda Béni Hssen" alt="Gharb Chrarda Béni Hssen" />
+	<area shape="poly"
+		coords="170,38,170,38,171,37,171,37,172,36,172,35,172,34,172,34,172,33,173,33,173,33,174,33,174,33,175,34,176,34,176,35,178,35,180,35,181,35,184,34,185,34,186,35,186,35,186,36,187,36,187,37,188,38,188,39,188,40,188,42,188,44,187,45,187,47,187,47,186,48,185,48,183,48,183,48,182,46,182,47,181,47,181,47,180,47,179,48,178,49,178,49,178,50,178,50,177,51,177,51,175,51,175,50,174,50,172,49,172,49,171,48,171,47,171,46,171,45,172,45,172,44,173,44,174,44,174,43,174,43,174,42,174,41,174,40,173,40,172,39,171,39,170,38"
+		href="chercheurs/resultat_recherche/region_5.html"
+		title="Rabat Salé Zammour Zaer" alt="Rabat Salé Zammour Zaer" />
+	<area shape="poly"
+		coords="165,40,166,41,166,41,166,42,166,42,166,43,166,43,166,44,166,44,166,44,166,45,166,46,166,46,166,47,166,47,166,47,165,48,165,48,165,49,164,49,164,49,164,50,164,50,164,51,163,51,162,51,162,50,162,50,161,51,161,51,160,51,160,50,159,50,159,50,158,50,158,50,157,50,156,50,156,50,155,50,155,50,154,50,154,50,154,50,154,49,154,48,155,48,155,47,155,47,156,46,156,46,156,46,157,46,158,46,158,46,159,46,159,46,160,45,160,45,161,45,161,45,161,44,162,44,162,44,163,44,163,43,163,43,163,43,164,43,164,42,164,42,164,42,164,42,164,41,165,41,165,41,165,41,165,40,165,40"
+		href="chercheurs/resultat_recherche/region_1.html"
+		alt="Grand Casablanca" />
+	<area shape="poly"
+		coords="168,66,168,64,168,64,169,63,169,63,169,62,169,62,169,61,170,61,170,61,171,60,171,60,172,60,172,60,173,60,173,60,174,59,175,59,177,59,178,59,180,59,181,59,181,59,182,59,183,59,183,59,184,59,184,58,184,58,184,57,183,56,183,56,182,54,181,53,180,52,178,52,177,52,176,52,175,52,174,52,174,52,174,51,173,51,173,51,172,51,172,51,171,50,171,50,171,49,170,49,170,49,170,47,170,46,170,45,170,45,170,44,170,44,170,44,171,43,172,43,172,43,172,43,172,43,173,42,173,42,172,41,172,41,171,41,170,41,170,41,169,41,169,41,169,41,168,40,168,40,168,39,168,39,167,39,167,39,167,39,167,40,167,40,167,40,167,41,167,41,167,42,167,42,167,43,167,43,167,44,168,44,168,44,168,45,168,46,168,46,168,47,167,47,167,48,166,49,166,49,166,49,166,50,166,50,165,51,165,51,164,51,163,51,162,51,162,52,161,52,161,52,160,52,159,51,159,51,158,51,158,51,158,51,157,51,156,51,156,51,155,51,155,51,154,51,154,52,154,53,154,54,154,55,154,55,154,56,154,57,154,57,154,58,155,58,155,59,155,59,156,60,156,60,157,60,157,61,158,61,159,62,159,62,160,63,161,63,161,63,162,63,163,64,164,65,165,65,165,65,166,65,168,66"
+		href="chercheurs/resultat_recherche/region_2.html"
+		alt="Chouia Ouardigha" />
+	<area shape="poly"
+		coords="147,80,147,79,147,78,147,76,147,75,147,74,147,73,147,73,148,72,148,72,149,72,149,71,149,71,148,70,148,70,148,70,147,69,147,69,147,68,147,67,147,67,147,66,148,66,149,66,150,65,150,65,151,64,151,63,152,63,152,62,152,62,152,61,153,59,153,57,152,57,152,56,152,54,152,52,152,51,153,50,153,49,153,48,153,47,151,47,151,48,149,49,148,50,148,50,147,50,146,51,146,51,145,52,144,53,144,53,143,53,143,54,142,55,141,55,141,56,140,56,139,57,139,58,138,59,137,60,136,62,136,63,136,64,135,65,135,66,134,66,134,67,134,68,133,68,133,69,133,69,133,70,133,71,132,71,133,72,133,73,133,74,134,74,135,74,136,73,137,73,138,74,139,74,139,75,139,75,140,76,140,77,140,78,140,78,141,79,141,79,144,80,144,80,145,80,145,80,146,80,147,80"
+		href="chercheurs/resultat_recherche/region_4.html"
+		title="Doukkala Abda" alt="Doukkala Abda" />
+	<area shape="poly"
+		coords="131,74,132,75,132,75,133,76,134,76,134,76,135,76,135,75,136,75,137,75,137,75,138,76,138,76,138,77,138,78,139,79,139,80,139,80,140,80,140,81,140,81,141,82,142,82,144,82,145,82,146,82,147,82,147,82,148,81,149,81,149,80,149,79,149,78,149,76,149,75,149,74,150,74,150,73,150,73,150,72,150,72,151,72,151,71,150,70,150,70,150,69,149,69,148,69,148,68,149,68,149,67,150,67,151,67,152,66,153,63,153,63,154,62,154,62,154,60,156,61,158,62,158,63,159,64,159,64,160,65,161,65,162,66,163,66,164,66,164,67,166,67,167,68,168,70,168,71,168,72,169,73,169,74,168,75,168,76,168,76,167,77,166,77,166,78,165,78,165,79,165,80,166,81,166,82,166,83,166,83,165,84,164,85,162,85,161,86,160,86,159,87,158,87,158,88,157,88,157,89,156,89,156,89,154,91,152,92,150,92,148,92,145,92,144,92,142,92,141,92,141,92,140,91,140,91,139,91,138,92,138,92,137,92,137,93,136,93,135,93,134,93,132,93,130,93,129,93,129,92,128,92,128,92,126,92,126,92,125,92,125,91,125,91,125,90,124,90,124,89,124,88,124,87,124,86,124,85,125,84,125,83,126,82,126,82,126,81,127,80,127,80,127,79,128,79,128,78,128,77,129,78,129,78,129,77,129,77,130,76,130,76,130,76,130,75,130,75,131,74"
+		href="chercheurs/resultat_recherche/region_11.html"
+		title="Marrakech Tensift Al Haouz" alt="Marrakech Tensift Al Haouz" />
+	<area shape="poly"
+		coords="127,132,129,131,130,130,131,129,132,127,133,126,135,126,136,124,136,122,137,121,141,120,142,119,143,111,144,111,145,110,150,110,151,109,157,109,158,108,159,105,160,104,162,104,163,105,163,107,164,108,166,106,166,106,166,105,167,105,167,104,168,104,169,103,171,103,172,102,173,101,174,101,175,102,176,103,177,104,178,106,179,106,180,109,180,113,182,115,186,114,189,113,190,113,191,113,192,112,193,112,194,111,195,110,196,109,198,108,199,108,199,104,198,103,198,103,198,101,197,100,197,97,196,95,196,90,196,87,197,86,197,85,197,84,198,84,198,83,197,83,196,82,195,82,194,81,189,81,190,78,190,77,191,77,191,76,192,75,192,74,190,74,189,75,188,76,187,77,185,79,182,80,180,81,177,83,175,84,173,85,168,85,165,86,161,88,159,89,156,91,154,93,154,94,147,94,142,94,141,94,141,93,139,93,138,94,137,95,131,95,129,95,128,95,128,94,127,93,126,93,124,94,124,95,124,96,124,97,125,98,125,98,126,100,126,102,127,105,127,105,127,107,126,109,125,111,124,112,124,113,123,114,122,114,122,115,121,117,121,118,120,118,119,119,119,120,118,121,117,121,116,123,116,124,118,126,119,125,121,123,123,123,124,125,125,126,127,127,127,128,128,129,128,130,127,130,127,131,127,132,127,132,127,132"
+		href="chercheurs/resultat_recherche/region_12.html"
+		title="Souss Massa Draâ" alt="Souss Massa Draâ" />
+	<area shape="poly"
+		coords="77,172,77,173,78,173,78,174,78,174,78,176,79,176,79,177,79,177,79,178,80,179,80,180,81,180,81,180,82,180,82,180,82,180,83,180,83,180,83,180,84,180,84,180,84,180,85,180,85,181,85,181,86,181,86,181,86,181,87,181,87,181,97,182,105,182,112,183,122,183,134,183,140,183,141,183,141,182,141,179,141,171,141,164,140,158,140,145,141,142,141,140,142,138,142,137,143,135,143,134,143,133,144,133,144,132,145,131,145,131,146,130,146,130,147,128,149,127,150,126,150,126,151,125,152,125,153,124,153,124,155,124,156,123,159,123,160,122,161,122,162,121,163,121,165,120,166,119,168,118,170,117,170,117,175,117,176,118,179,115,178,111,178,108,177,107,177,106,176,105,176,104,176,104,175,104,174,103,173,104,171,105,170,105,169,105,168,106,167,107,167,107,167,108,166,109,165,110,163,110,162,109,162,109,162,107,161,106,160,106,160,108,159,108,159,109,157,111,153,111,151,111,149,111,148,112,147,112,145,112,144,113,144,114,144,115,144,116,144,118,144,118,144,119,144,120,143,121,142,121,141,122,139,122,138,122,138,123,137,124,137,126,136,127,136,128,134,128,133,129,133,129,132,130,131,131,131,131,130,132,130,133,129,134,128,134,125,135,124,133,124,131,125,131,125,128,124,128,123,127,122,126,120,127,119,128,117,128,116,127,115,127,115,126,114,126,114,126,113,126,112,127,111,128,110,128,110,129,108,130,107,131,105,132,104,133,101,135,101,135,100,136,99,137,98,138,97,138,96,139,96,139,95,140,94,141,93,142,92,142,92,143,92,143,92,144,93,145,93,145,93,146,93,146,93,147,92,148,91,148,91,148,90,149,90,149,89,149,89,150,89,150,88,151,87,152,87,153,86,153,86,154,85,156,84,157,84,158,84,159,83,160,83,161,82,164,81,165,81,166,80,167,80,168,79,169,79,170,78,171,77,171,77,172"
+		href="chercheurs/resultat_recherche/region_10.html"
+		title="Guelmin Es Smara" alt="Guelmin Es Smara" />
+	<area shape="poly"
+		coords="37,203,41,206,47,206,61,206,76,206,83,206,84,205,84,181,84,181,82,181,81,182,80,182,79,182,79,182,79,180,78,178,77,176,76,174,76,171,78,168,79,166,80,163,82,160,83,158,83,155,85,153,87,149,89,147,90,146,91,146,91,145,90,144,89,143,88,143,87,144,85,144,84,144,83,145,82,145,81,145,80,145,76,145,75,146,74,146,73,147,72,148,71,149,69,151,68,153,67,155,66,158,65,160,64,163,62,166,59,169,55,173,52,176,51,177,48,178,45,180,44,183,42,186,42,188,41,190,40,192,40,195,39,196,39,198,38,199,38,200,38,200,38,201,37,202,37,202,37,203,37,203"
+		href="chercheurs/resultat_recherche/region_8.html"
+		title="Laâyoune Boujdour Sakia Hamra"
+		alt="Laâyoune Boujdour Sakia Hamra" />
+	<area shape="poly"
+		coords="37,204,37,204,38,205,39,205,40,207,40,207,45,207,66,207,84,207,84,208,84,211,84,213,85,215,85,221,84,222,84,223,84,224,83,225,83,226,82,226,81,227,80,228,79,229,77,229,76,229,75,229,75,230,73,230,72,231,71,232,70,232,69,234,68,235,67,236,67,238,66,239,66,241,66,242,65,244,66,245,66,264,65,265,42,264,41,264,24,264,5,264,2,264,1,264,1,265,0,264,0,264,0,259,1,257,1,255,2,253,3,251,6,247,8,243,11,239,11,237,12,235,15,230,19,224,25,218,27,215,29,213,31,211,33,209,34,208,35,206,36,205,37,204"
+		href="chercheurs/resultat_recherche/region_9.html"
+		title="Oued Eddahab-Laguira" alt="Oued Eddahab-Laguira" />
+</map> <div class="info_anime"><marquee width="170" height="72" direction="Up"
+	loop="-1" scrolldelay="170" scrollamount="2" behavior="scroll">
+<center>Aujourd'hui Mardi 13 Mai 2014<br />
+<strong>1166</strong> offres d'emploi en ligne<br />
+<strong>655918 </strong>CV en ligne</center>
+</marquee></div>
+</div>
 </div>
 
-<div class="row">
+<div id="sct_recrutes" class="grid_4 margintop10 alpha">
+<div class="h1_title">
+<div class="d_h1"></div>
+<h1 class="c_h1">Les entreprises qui recrutent</h1>
+<div class="f_h1"></div>
+</div>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Follow Development') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!'), '<a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">', '</a>', '<a href="http://framework.zend.com/zf2/blog">', '</a>', '<a href="https://github.com/zendframework/zf2/issues">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://framework.zend.com/zf2" target="_blank"><?php echo $this->translate('ZF2 Development Portal') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
+<ul>
+<li><a href="chercheurs/resultat_recherche/entreprise_Groupe%20-%20Attijariwafa%20bank.html"><img src="files/entreprises/logo/Groupe%20-%20Attijariwafa%20bank.jpg" id="imgEntreprise" width="78" height="64" title="Groupe - Attijariwafa bank" alt="" /></a></li><li><a href="chercheurs/resultat_recherche/entreprise_YAZAKI%20Tanger%20Maroc.html"><img src="files/entreprises/logo/YAZAKI%20Tanger%20Maroc.html" id="imgEntreprise" width="78" height="64" title="YAZAKI Tanger Maroc" alt="" /></a></li><li><a href="chercheurs/resultat_recherche/entreprise_DELPHI%20PACKARD.html"><img src="files/entreprises/logo/DELPHI%20PACKARD.html" id="imgEntreprise" width="78" height="64" title="DELPHI PACKARD" alt="" /></a></li></ul>
+</div>
+<div id="dern_offres" class="grid_5 omega margintop10">
+<div class="h1_title">
+<div class="d_h1"></div>
+<h1 class="c_h1">Les dernières offres</h1>
+<div class="f_h1"></div>
+</div>
+<table border="0">
+	<tr class="grid element">
+		<td width="260px" style="margin-bottom: 0px;"><span
+			class="pull-left grid alpha" id="offreLink"><a href="entreprises/bloc_offre_home/300639/display.html" class="nyroModal" id="offreLink">Téléconseiller</a> </span></td>
+		<td><span class="pull-left grid alpha omega ville">EL JADIDA   </span>
+		</td>
+	</tr>
+		<tr class="grid element">
+		<td width="260px" style="margin-bottom: 0px;"><span
+			class="pull-left grid alpha" id="offreLink"><a href="entreprises/bloc_offre_home/300728/display.html" class="nyroModal" id="offreLink">Commercial/Commerciale</a> </span></td>
+		<td><span class="pull-left grid alpha omega ville">MARRAKECH GUELIZ-ENNAKHIL</span>
+		</td>
+	</tr>
+		<tr class="grid element">
+		<td width="260px" style="margin-bottom: 0px;"><span
+			class="pull-left grid alpha" id="offreLink"><a href="entreprises/bloc_offre_home/300607/display.html" class="nyroModal" id="offreLink">Barman</a> </span></td>
+		<td><span class="pull-left grid alpha omega ville">RABAT HASSAN</span>
+		</td>
+	</tr>
+		<tr class="grid element">
+		<td width="260px" style="margin-bottom: 0px;"><span
+			class="pull-left grid alpha" id="offreLink"><a href="entreprises/bloc_offre_home/300620/display.html" class="nyroModal" id="offreLink">Conducteur de transport en commun</a> </span></td>
+		<td><span class="pull-left grid alpha omega ville">OUARZAZATE </span>
+		</td>
+	</tr>
+		<tr class="grid element">
+		<td width="260px" style="margin-bottom: 0px;"><span
+			class="pull-left grid alpha" id="offreLink"><a href="entreprises/bloc_offre_home/300648/display.html" class="nyroModal" id="offreLink">Employé polyvalent de restauration </a> </span></td>
+		<td><span class="pull-left grid alpha omega ville">MDIQ</span>
+		</td>
+	</tr>
+	</table>
+<div id="td_offre_btn"
+	class="fix-width pull-left txt-center margintop10"><a href="chercheurs/resultat_recherche/tout_all.html" id="offres_btn">Voir toutes les offres</a></div>
+</div>
+<div class="clear"></div>
+<div id="sondage_ateliers" class="grid_4 margintop10 alpha">
+<div class="h1_title">
+<div class="d_h1"></div>
+<h1 class="c_h1">Ateliers de recherche d'emploi</h1>
+<div class="f_h1"></div>
+</div>
+<div id="ateliers">
+<ul class="liens-ateliers">
+	<li><a
+		title="Merci de contacter votre agence Anapec la plus proche pour en bénéficier "
+		href="#">Identifier et mettre en valeur ses compétences</a></li>
+	<li><a
+		title="Merci de contacter votre agence Anapec la plus proche pour en bénéficier"
+		href="#">Organiser sa recherche d’emploi</a></li>
+	<li><a
+		title="Merci de contacter votre agence Anapec la plus proche pour en bénéficier"
+		href="#">Rédiger son CV</a></li>
+	<li><a
+		title="Merci de contacter votre agence Anapec la plus proche pour en bénéficier"
+		href="#">Rédiger ses lettres de motivation</a></li>
+	<li><a
+		title="Merci de contacter votre agence Anapec la plus proche pour en bénéficier"
+		href="#">Se préparer à un entretien d’embauche</a></li>
+	<li><a
+		title="Merci de contacter votre agence Anapec la plus proche pour en bénéficier"
+		href="#">Prospecter les entreprises par téléphone</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+<div class="h1_title">
+<div class="d_h1"></div>
+<h1 class="c_h1">Sondage</h1>
+<div class="f_h1"></div>
+</div>
+<div id="sondage">
+<form action="#" method="post"><span class="pull-left title_bold">Comment
+trouvez-vous notre nouveau portail?</span>
+<div class="clear"></div>
+<input type="radio" name="rd_sondage" /> <span class="gray">Excellent</span>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Discover Modules') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
+<div class="clear"></div>
+<input type="radio" name="rd_sondage" /> <span class="gray">Bien</span>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Help &amp; Support') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We\'d love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s.'), '<a href="irc://irc.freenode.net/zftalk">', '</a>', '<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://webchat.freenode.net?channels=zftalk" target="_blank"><?php echo $this->translate('Ping us on IRC') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
+<div class="clear"></div>
+<input type="radio" name="rd_sondage" /> <span class="gray">Moyen</span>
+
+<div class="clear"></div>
+<input type="radio" name="rd_sondage" /> <span class="gray">Peu
+intéressant</span>
+
+<div class="clear"></div>
+<input type="radio" name="rd_sondage" /> <span class="gray">Pas du tout
+intéressant</span>
+<div class="clear"></div>
+<input class="pull-right margintop5 btn_voter" type="submit"
+	value="Voter" /></form>
+</div>
+<div class="clear"></div>
+</div>
+<div id="videos" class="grid_5 omega margintop10">
+<div class="h1_title">
+<div class="d_h1"></div>
+<h1 class="c_h1">Nos conseils en vidéo</h1>
+<div class="f_h1"></div>
+</div>
+<div class="fix-width yt_holder txt-center"><!--                <img src="<?php echo $this->basePath(); ?>img/img_new/videos/delete.png" alt="ANAPEC"/>-->
+<div id="ytvideo2"><object height="250" width="320">
+	<param name="movie" value="" />
+	<param name="wmode" value="transparent" />
+	<param name="youtube" type="application/x-shockwave-flash" />
+</object></div>
+<div class="social margintop5 pull-left fix-width"><span
+	class="txt-center margintop5">Partager sur :</span> <a target="_blank"
+	href="#"> <img alt="Facebook" src="<?php echo $this->basePath(); ?>img/img_new/facebook.png" /> </a> <a
+	target="_blank" href="#"> <img alt="Twitter"
+	src="<?php echo $this->basePath(); ?>img/img_new/twitter.png" /> </a> <a target="_blank" href="#"> <img
+	alt="Linkedin" src="<?php echo $this->basePath(); ?>img/img_new/linkedin.png" /> </a> <a
+	target="_blank" href="#"> <img alt="Viadeo" src="<?php echo $this->basePath(); ?>img/img_new/viadeo.png" />
+</a></div>
+<ul class="demo2 jcarousel-skin-tango" id="jcarous">
+
+
+	<li class="currentvideo">
+	<a href="http://www.youtube.com/watch?v=yEbZe_hBOvk&amp;feature=youtube_gdata_player"> 
+	<img src="../../i1.ytimg.com/vi/yEbZe_hBOvk/0.jpg" />
+	</a>
+	
+	<p>Capsule Conseil ANAPEC...</p>
+	
+	</li>
+
+
+	
+	<li><a href="http://www.youtube.com/watch?v=asBgAo4vpxY&amp;feature=youtube_gdata_player" alt="Capsule Conseil ANAPEC 17: Bien réussir l'entretien d'embauche"
+		> <img
+		src="../../i1.ytimg.com/vi/asBgAo4vpxY/0.jpg" alt="Capsule Conseil ANAPEC 17: Bien réussir l'entretien d'embauche"
+		 /></a>
+	<p>Capsule Conseil ANAPEC...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=ffogfueNXmw&amp;feature=youtube_gdata_player" alt="Capsule Conseil ANAPEC 16: l'objectif professionnel"
+		> <img
+		src="../../i1.ytimg.com/vi/ffogfueNXmw/0.jpg" alt="Capsule Conseil ANAPEC 16: l'objectif professionnel"
+		 /></a>
+	<p>Capsule Conseil ANAPEC...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=B2f4vSOC4oA&amp;feature=youtube_gdata_player" alt="Capsule Conseil ANAPEC 15: La question du salaire"
+		> <img
+		src="../../i1.ytimg.com/vi/B2f4vSOC4oA/0.jpg" alt="Capsule Conseil ANAPEC 15: La question du salaire"
+		 /></a>
+	<p>Capsule Conseil ANAPEC...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=iVCj2a3K4Fg&amp;feature=youtube_gdata_player" alt="Capsule Conseil ANAPEC 14: Donner une bonne impression"
+		> <img
+		src="../../i1.ytimg.com/vi/iVCj2a3K4Fg/0.jpg" alt="Capsule Conseil ANAPEC 14: Donner une bonne impression"
+		 /></a>
+	<p>Capsule Conseil ANAPEC...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=hCKgyTz8-qE&amp;feature=youtube_gdata_player" alt="Capsule Conseil ANAPEC 13: Bien se préparer à un entretien"
+		> <img
+		src="../../i1.ytimg.com/vi/hCKgyTz8-qE/0.jpg" alt="Capsule Conseil ANAPEC 13: Bien se préparer à un entretien"
+		 /></a>
+	<p>Capsule Conseil ANAPEC...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=KtKnqTFSqg0&amp;feature=youtube_gdata_player" alt="ANAPEC sur la MAP: أسبوع التشغيل للطالب"
+		> <img
+		src="../../i1.ytimg.com/vi/KtKnqTFSqg0/0.jpg" alt="ANAPEC sur la MAP: أسبوع التشغيل للطالب"
+		 /></a>
+	<p>ANAPEC sur la MAP: أخ..</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=8R1eHevX3m8&amp;feature=youtube_gdata_player" alt="ANAPEC sur ChoufTV: أسبوع التشغيل للطالب"
+		> <img
+		src="../../i1.ytimg.com/vi/8R1eHevX3m8/0.jpg" alt="ANAPEC sur ChoufTV: أسبوع التشغيل للطالب"
+		 /></a>
+	<p>ANAPEC sur ChoufTV: أ...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=U7yJLsLlDTk&amp;feature=youtube_gdata_player" alt="َANAPEC sur Al Aoula: أسبوع التشغيل للطالب"
+		> <img
+		src="../../i1.ytimg.com/vi/U7yJLsLlDTk/0.jpg" alt="َANAPEC sur Al Aoula: أسبوع التشغيل للطالب"
+		 /></a>
+	<p>َANAPEC sur Al Aoula:...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=ibZy_H2YMYs&amp;feature=youtube_gdata_player" alt="2M Econews: La Semaine Emploi pour l'Etudiant"
+		> <img
+		src="../../i1.ytimg.com/vi/ibZy_H2YMYs/0.jpg" alt="2M Econews: La Semaine Emploi pour l'Etudiant"
+		 /></a>
+	<p>2M Econews: La Semaine...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=B8-y_IMD6Sc&amp;feature=youtube_gdata_player" alt="2M Econews: أسبوع التشغيل للطالب"
+		> <img
+		src="../../i1.ytimg.com/vi/B8-y_IMD6Sc/0.jpg" alt="2M Econews: أسبوع التشغيل للطالب"
+		 /></a>
+	<p>2M Econews: أسبوع...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=V7ssu-wbFIg&amp;feature=youtube_gdata_player" alt="Capsule Conseil ANAPEC 12: Réussir l'entretien d'embauche"
+		> <img
+		src="../../i1.ytimg.com/vi/V7ssu-wbFIg/0.jpg" alt="Capsule Conseil ANAPEC 12: Réussir l'entretien d'embauche"
+		 /></a>
+	<p>Capsule Conseil ANAPEC...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=PkD3AftAJ4o&amp;feature=youtube_gdata_player" alt="Episode du 09 Février de Kan Kalab Aala Khadma"
+		> <img
+		src="../../i1.ytimg.com/vi/PkD3AftAJ4o/0.jpg" alt="Episode du 09 Février de Kan Kalab Aala Khadma"
+		 /></a>
+	<p>Episode du 09 Février...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=tucqPl_nhBM&amp;feature=youtube_gdata_player" alt="Episode du 02 Février de Kan Kalab Aala Khadma"
+		> <img
+		src="../../i1.ytimg.com/vi/tucqPl_nhBM/0.jpg" alt="Episode du 02 Février de Kan Kalab Aala Khadma"
+		 /></a>
+	<p>Episode du 02 Février...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=3aJUXnYljmY&amp;feature=youtube_gdata_player" alt="Episode du 26 Janvier de Kan Kalab Aala Khadma"
+		> <img
+		src="../../i1.ytimg.com/vi/3aJUXnYljmY/0.jpg" alt="Episode du 26 Janvier de Kan Kalab Aala Khadma"
+		 /></a>
+	<p>Episode du 26 Janvier ...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=l_P4CPrKNr4&amp;feature=youtube_gdata_player" alt="Episode du 12 Janvier de Kan Kalab Aala Khadma"
+		> <img
+		src="../../i1.ytimg.com/vi/l_P4CPrKNr4/0.jpg" alt="Episode du 12 Janvier de Kan Kalab Aala Khadma"
+		 /></a>
+	<p>Episode du 12 Janvier ...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=VzjMw9CoTx4&amp;feature=youtube_gdata_player" alt="Episode du 05 Janvier de Kan Kalab Aala Khadma"
+		> <img
+		src="../../i1.ytimg.com/vi/VzjMw9CoTx4/0.jpg" alt="Episode du 05 Janvier de Kan Kalab Aala Khadma"
+		 /></a>
+	<p>Episode du 05 Janvier ...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=MyKcydGGM6I&amp;feature=youtube_gdata_player" alt="ANAPEC sur Grand Angle 2M: Embauche des étrangers au Maroc"
+		> <img
+		src="../../i1.ytimg.com/vi/MyKcydGGM6I/0.jpg" alt="ANAPEC sur Grand Angle 2M: Embauche des étrangers au Maroc"
+		 /></a>
+	<p>ANAPEC sur Grand Angle...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=PsPCYXx-WDQ&amp;feature=youtube_gdata_player" alt="ANAPEC sur Econews 2M: Séminaire Salé 27 Décembre 2013"
+		> <img
+		src="../../i1.ytimg.com/vi/PsPCYXx-WDQ/0.jpg" alt="ANAPEC sur Econews 2M: Séminaire Salé 27 Décembre 2013"
+		 /></a>
+	<p>ANAPEC sur Econews 2M:...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=8rTV57y28ZQ&amp;feature=youtube_gdata_player" alt="ANAPEC sur 2M: Séminaire Salé 27 Décembre 2013"
+		> <img
+		src="../../i1.ytimg.com/vi/8rTV57y28ZQ/0.jpg" alt="ANAPEC sur 2M: Séminaire Salé 27 Décembre 2013"
+		 /></a>
+	<p>ANAPEC sur 2M: Sémina...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=sQV2czLOoqU&amp;feature=youtube_gdata_player" alt="ANAPEC sur Al Aoula: Séminaire Salé 27 Décembre 2013"
+		> <img
+		src="../../i1.ytimg.com/vi/sQV2czLOoqU/0.jpg" alt="ANAPEC sur Al Aoula: Séminaire Salé 27 Décembre 2013"
+		 /></a>
+	<p>ANAPEC sur Al Aoula: S...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=U1ep0FFNySI&amp;feature=youtube_gdata_player" alt="Episode du 29 Décembre de Kan Kalab Aala Khadma"
+		> <img
+		src="../../i1.ytimg.com/vi/U1ep0FFNySI/0.jpg" alt="Episode du 29 Décembre de Kan Kalab Aala Khadma"
+		 /></a>
+	<p>Episode du 29 Décembr...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=mv0i6h094Ak&amp;feature=youtube_gdata_player" alt="Episode du 22 Décembre de Kan Kalab Aala Khadma"
+		> <img
+		src="../../i1.ytimg.com/vi/mv0i6h094Ak/0.jpg" alt="Episode du 22 Décembre de Kan Kalab Aala Khadma"
+		 /></a>
+	<p>Episode du 22 Décembr...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=xM564LeXzFg&amp;feature=youtube_gdata_player" alt="Episode du 16 Décembre de Kan Kalab Aala Khadma"
+		> <img
+		src="../../i1.ytimg.com/vi/xM564LeXzFg/0.jpg" alt="Episode du 16 Décembre de Kan Kalab Aala Khadma"
+		 /></a>
+	<p>Episode du 16 Décembr...</p>
+	</li>
+
+	
+	<li><a href="http://www.youtube.com/watch?v=2YhQW8zXf6o&amp;feature=youtube_gdata_player" alt="Missions et prestations de l'ANAPEC sur Hit Radio"
+		> <img
+		src="../../i1.ytimg.com/vi/2YhQW8zXf6o/0.jpg" alt="Missions et prestations de l'ANAPEC sur Hit Radio"
+		 /></a>
+	<p>Missions et prestation...</p>
+	</li>
+
+	
+
+</ul>
+</div>
+<div class="clear pull-left margintop5"></div>
+</div>
 </div>

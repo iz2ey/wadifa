@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+.nav-lot2 a #suivant{background:url("../img/img_new/puc-suivant-nav-lot2.png") no-repeat left;padding-left:10px;float:left;}
+.nav-lot2 a #precedant{background:url("../img/img_new/puc-precedant-nav-lot2.png") no-repeat right;padding-right:10px;float:left;}
+.nav-lot2 .current{background:url("../img/img_new/bg-hover-nav-lot2.png") repeat-x;text-decoration:none;float:left;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;padding-left:10px;padding-right:10px;padding-bottom:4px;padding-top:4px;margin-right:4px;color:#fff;font-size:11px;font-weight:bold;}
+
+.nav-lot3 a #suivant{background:url("../img/img_new/puc-suivant-nav-lot2.png") no-repeat left;padding-left:10px;float:left;}
+.nav-lot3 a #precedant{background:url("../img/img_new/puc-precedant-nav-lot2.png") no-repeat right;padding-right:10px;float:left;}
+.nav-lot3 .current{background:url("../img/img_new/bg-hover-nav-lot3.png") repeat-x;text-decoration:none;float:left;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;padding-left:10px;padding-right:10px;padding-bottom:4px;padding-top:4px;margin-right:4px;color:#fff;font-size:11px;font-weight:bold;}
+
+.selectListe {
+    background: none repeat scroll 0 0 whiteSmoke;
+    border: 1px solid #CCCCCC;
+    color: #1E83BD;
+    float: left;
+    font-family: arial;
+    font-size: 11px;
+    height: 30px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    width: 149px;
+    margin-bottom:6px;
+}
